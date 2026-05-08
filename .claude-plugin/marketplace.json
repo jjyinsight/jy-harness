@@ -1,0 +1,11 @@
+{
+  "name": "phased-dev-tools",
+  "owner": { "name": "Your Team" },
+  "plugins": [
+    {
+      "name": "phased-dev",
+      "source": "./plugins/phased-dev",
+      "description": "5-phase development pipeline (Clarify → Context → Plan → Generate → Evaluate). Each phase runs in an isolated subagent and produces an artifact for the next."
+    }
+  ]
+}
