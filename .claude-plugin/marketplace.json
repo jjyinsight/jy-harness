@@ -1,6 +1,6 @@
 {
-  "name": "phased-dev-tools",
-  "owner": { "name": "Your Team" },
+  "name": "jy-harness",
+  "owner": { "name": "Jayden" },
   "plugins": [
     {
       "name": "phased-dev",
