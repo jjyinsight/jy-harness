@@ -8,24 +8,14 @@ Claude Code **plugin marketplace** for the team.
 이 repo가 GitHub에 `OWNER/phased-dev-tools` 라고 가정 (사내 GitLab 등은 아래 "다른 git 호스트" 참고).
 
 ```
-/plugin marketplace add OWNER/phased-dev-tools
-/plugin install phased-dev@phased-dev-tools
+/plugin marketplace add jjy.insight/phased-dev-tools
+
 ```
 
 설치 확인:
 ```
 /plugin list
 ```
-
-### 다른 git 호스트 (사내 GitLab/Bitbucket/자체 git)
-
-```
-/plugin marketplace add https://gitlab.example.com/team/phased-dev-tools.git
-/plugin marketplace add git@gitlab.example.com:team/phased-dev-tools.git
-```
-
-GitHub 외 호스트는 full URL 또는 SSH URL을 사용합니다.
-
 ## 자동 업데이트 (선택)
 
 설치만 하려면 git 읽기 권한만 있으면 됩니다 (SSH 키 또는 평소 쓰던 git credential helper 그대로). **자동 업데이트**까지 받으려면 토큰을 환경변수로 설정합니다.
