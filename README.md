@@ -1,21 +1,20 @@
-# phased-dev-tools
+# jy-harness
 
 Claude Code **plugin marketplace** for the team.
 현재 1개 plugin(`phased-dev`)을 호스팅합니다.
 
 ## 팀원 설치 (Claude Code 안에서)
 
-이 repo가 GitHub에 `OWNER/phased-dev-tools` 라고 가정 (사내 GitLab 등은 아래 "다른 git 호스트" 참고).
-
 ```
-/plugin marketplace add jjy.insight/phased-dev-tools
-
+/plugin marketplace add jjyinsight/jy-harness
+/plugin install phased-dev@jy-harness
 ```
 
 설치 확인:
 ```
 /plugin list
 ```
+
 ## 자동 업데이트 (선택)
 
 설치만 하려면 git 읽기 권한만 있으면 됩니다 (SSH 키 또는 평소 쓰던 git credential helper 그대로). **자동 업데이트**까지 받으려면 토큰을 환경변수로 설정합니다.
@@ -63,14 +62,14 @@ plugins/
 README.md                                ← 이 파일
 ```
 
-## 이름 변경 (배포 전 권장)
+## 현재 이름 / 변경 시
 
-기본값:
-- marketplace name: `phased-dev-tools`
+현재 값:
+- marketplace name: `jy-harness`
 - plugin name: `phased-dev`
-- owner.name: `Your Team`
+- owner.name: `Jayden`
 
-사내 컨벤션에 맞게:
+바꾸려면:
 - `.claude-plugin/marketplace.json`의 `name`, `owner.name` 갱신
 - `plugins/phased-dev/.claude-plugin/plugin.json`의 `author.name` 갱신
 - 변경 후엔 팀원 설치 명령도 따라 바뀝니다 (`/plugin install <plugin>@<marketplace>`).
@@ -82,8 +81,8 @@ README.md                                ← 이 파일
 3. commit & push
 4. 팀원: 자동 업데이트(토큰 설정 시) 또는
    ```
-   /plugin marketplace update phased-dev-tools
-   /plugin install --force phased-dev@phased-dev-tools
+   /plugin marketplace update jy-harness
+   /plugin install --force phased-dev@jy-harness
    ```
 
 ## 참고 문서
